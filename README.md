@@ -1,4 +1,4 @@
-# apilabs.ai Super Contracts
+# Super Contracts from apilabs.ai
 
 > **One executable contract for APIs, MCPs, workflows, and AI agents.**
 >
