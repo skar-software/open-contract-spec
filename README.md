@@ -242,14 +242,6 @@ Code Samples (TBA)
 
 ---
 
-## Status
-
-Open Contract Spec is in early public development.
-
-The goal is to create a neutral, open format for safe API, MCP, and AI-agent execution.
-
----
-
 ## Website
 Developer website with code recipes, playground and demos 
 [supercontracts.dev](https://supercontracts.dev)
