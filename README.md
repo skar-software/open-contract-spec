@@ -59,6 +59,7 @@ Bring SuperContracts directly into Cursor™ through MCP, enabling developers an
 
 Every action captures requests, responses, policy decisions, approvals, actors, timestamps, and execution traces for auditability, compliance, monitoring, and debugging.
 
+## Cursor
 
 Connect SuperContracts to Cursor through MCP so your AI agent can discover contracts, execute workflows, inspect test history, and receive auto-generated AI context — without leaving the IDE.
 
@@ -67,7 +68,7 @@ Every tool call runs through the same guardrails, approvals, and evidence captur
 ### Configure SuperContracts MCP in Cursor
 
 1. Open **Cursor Settings → Features → MCP** and click **Add MCP Server**, or add a project-level `.cursor/mcp.json` file.
-2. Download the SuperContracts MCP configuration from [supercontracts.dev](https://supercontracts.dev) using **Add to Cursor**, or paste the config below after starting the local MCP server:
+2. Download the SuperContracts MCP server from [apilabs-mcp-server](https://github.com/apilabs-ai/apilabs-mcp-server), or paste the config below after starting the local MCP server:
 
 ```json
 {
@@ -111,6 +112,42 @@ In the demo, Cursor:
 1. Calls `run_contract` with a SuperContracts YAML workflow.
 2. Captures run artifacts — `run.json`, `response.json`, and `ai_context.md`.
 3. Uses the generated AI context to explain failures, suggest fixes, and continue debugging — all inside the same chat.
+
+### Example 1
+
+Ask Cursor™ to:
+
+```text
+Refund Stripe payment for Order #10482.
+```
+
+SuperContracts executes the workflow, requests approval if needed, performs the refund, and records the complete audit trail.
+
+### Example 2
+
+Ask Cursor™ to:
+
+```text
+Create a new Supabase table for feature flags.
+```
+
+SuperContracts validates the SQL, executes the migration, and records the executed SQL, user, timestamp, and result.
+
+---
+
+## AI Agent Guardrails
+
+Define the systems, tools, data, and actions an AI agent is permitted to access.
+
+These guardrails keep autonomous agents within approved boundaries and prevent unauthorized changes to enterprise systems.
+
+### Example 1
+
+Allow an AI support agent to read Stripe customer and subscription information, but prevent it from issuing refunds.
+
+### Example 2
+
+Allow an AI coding agent to create GitHub branches and pull requests, but prevent it from deploying changes to production.
 
 ---
 
@@ -216,6 +253,14 @@ Execute an order-fulfillment workflow that:
 5. Updates the order status.
 
 Code Samples (TBA)
+
+---
+
+## Status
+
+Open Contract Spec is in early public development.
+
+The goal is to create a neutral, open format for safe API, MCP, and AI-agent execution.
 
 ---
 
