@@ -64,7 +64,7 @@ Every tool call runs through the same guardrails, approvals, and evidence captur
 ### Connect in Cursor
 
 1. Open **Cursor Settings → Features → MCP** and click **Add MCP Server**, or add a project-level `.cursor/mcp.json` file.
-2. Download the SuperContracts MCP configuration from [supercontracts.dev](https://supercontracts.dev) using **Add to Cursor**, or paste the config below after starting the local MCP server:
+2. Download the SuperContracts MCP server from [apilabs-mcp-server](https://github.com/apilabs-ai/apilabs-mcp-server), or paste the config below after starting the local MCP server:
 
 ```json
 {
@@ -245,12 +245,6 @@ Code Samples (TBA)
 Open Contract Spec is in early public development.
 
 The goal is to create a neutral, open format for safe API, MCP, and AI-agent execution.
-
----
-
-## Website
-Developer website with code recipes, playground and demos 
-[supercontracts.dev](https://supercontracts.dev)
 
 ---
 
